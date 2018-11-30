@@ -6,14 +6,20 @@
 
 4-List the files content of train and test subdirectories to explore their contents.
 
-5-Read the test dataset("test/X_test.txt") with read_table function and col_names=FALSE as it has no column names.
+5-Creating the test dataframe with read_table function and col_names=FALSE as it has no column names.
 
-6-Read the column names ("features.txt")with read_lines with n_max =-1 to read all lines.
+6-Read the column names ("features.txt") with read_lines with n_max =-1 to read all lines.
 
-7-Annotate the column names of the test dataset by using the vector created in step 6.
+7-Annotate the column names of the test dataframe by using the vector created in step 6.
 
-8-Read the test labels("test/y_test.txt"), that encode the activity, with read_table function and col_names=FALSE as it has no column names.
+8-Creating the testlabels dataframe, that encode the activity, with read_table function and col_names=FALSE as it has no column names.
 
-9-Use the mutate and cut functions to create a column named activity with the actual naming activities and the selecting it only.
+9-Use the mutate and cut functions to create activitytest dataframe from the testlabels dataframe with the actual naming activities.
 
-10-Read the subject labels ("test/subject_test.txt")
+10-Creating the subjecttest dataframe with read_table function and col_names=FALSE as it has no column names.
+
+11-Creating the finaltest dataframe by columnbinding the sbjecttest,activitytest and test dataframes.
+
+12-Using the same procedure to create the finaltrain dataframe.
+
+
