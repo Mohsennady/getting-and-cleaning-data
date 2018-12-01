@@ -22,4 +22,13 @@
 
 12-Using the same procedure to create the finaltrain dataframe.
 
+13-Creating the mergeddata dataframe by merging the finaltest and finaltrain dataframes using all=TRUE as all column names are common and piping through tbl_df() function to have a more compact view.
+
+14-Creating the extracteddata dataframe by selecting the activity, subject and all columns containg the strings "mean()" and "std()".
+
+15-Modifying the columnnames of extracteddata dataframe to descriptive ones using the sub() function.
+
+16-Creating the tidydata dataframe from the extracteddata dataframe using the group_by(subject,activity) and summarise_all(mean) to get the average of all columns. As there are 30 subjects X 6 activities = 180 rows of this tidydata dataframe.
+
+
 
