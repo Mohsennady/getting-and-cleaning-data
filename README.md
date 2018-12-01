@@ -1,3 +1,5 @@
+## Steps for running the analysis
+
 1-Loading the tidyverse package which contains many packages used throughout my script.
 
 2-Downloading the datafile into our working directory into a file called "data.zip".
